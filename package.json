@@ -1,0 +1,29 @@
+{
+  "name": "market-place",
+  "version": "1.0.0",
+  "description": "a market place based back end",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint: fix": "eslint ./src ./test --ext .ts --fix",
+    "start": "yarn build && node dist/src/app.js",
+    "start:dev": "ts-node-dev src/app.ts"
+  },
+  "repository": "https://github.com/gaabMatias/market-place.git",
+  "author": "Gabriel Matias Corrêa <gabrielmatias0202@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.0.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
